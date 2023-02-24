@@ -1,0 +1,11 @@
+<class 'numpy.ndarray'>
+10
+[18, 12, 11, 1, 30, 2, 4, 0, 3, 5]
+Traceback (most recent call last):
+  File "q1.py", line 38, in <module>
+    sample_images.append[X_train[sample_indices[i]]]
+TypeError: 'builtin_function_or_method' object is not subscriptable
+Traceback (most recent call last):
+  File "q1.py", line 38, in <module>
+    sample_images.append[X_train[sample_indices[i]]]
+TypeError: 'builtin_function_or_method' object is not subscriptable

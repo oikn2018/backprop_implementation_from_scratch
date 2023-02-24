@@ -1,0 +1,233 @@
+2023-02-24 23:40:59,947 INFO    StreamThr :1552637 [internal.py:wandb_internal():87] W&B internal server running at pid: 1552637, started at: 2023-02-24 23:40:59.946448
+2023-02-24 23:40:59,949 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: status
+2023-02-24 23:40:59,953 INFO    WriterThread:1552637 [datastore.py:open_for_write():85] open: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/run-2eaephv8.wandb
+2023-02-24 23:40:59,954 DEBUG   SenderThread:1552637 [sender.py:send():336] send: header
+2023-02-24 23:40:59,981 DEBUG   SenderThread:1552637 [sender.py:send():336] send: run
+2023-02-24 23:41:00,608 INFO    SenderThread:1552637 [dir_watcher.py:__init__():216] watching files in: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files
+2023-02-24 23:41:00,608 INFO    SenderThread:1552637 [sender.py:_start_run_threads():1067] run started: 2eaephv8 with start time 1677262259.946578
+2023-02-24 23:41:00,608 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: summary_record
+2023-02-24 23:41:00,608 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-24 23:41:00,611 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: check_version
+2023-02-24 23:41:00,612 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: check_version
+2023-02-24 23:41:00,680 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: run_start
+2023-02-24 23:41:00,687 DEBUG   HandlerThread:1552637 [system_info.py:__init__():31] System info init
+2023-02-24 23:41:00,687 DEBUG   HandlerThread:1552637 [system_info.py:__init__():46] System info init done
+2023-02-24 23:41:00,687 INFO    HandlerThread:1552637 [system_monitor.py:start():151] Starting system monitor
+2023-02-24 23:41:00,687 INFO    SystemMonitor:1552637 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-24 23:41:00,688 INFO    HandlerThread:1552637 [system_monitor.py:probe():172] Collecting system info
+2023-02-24 23:41:00,688 INFO    SystemMonitor:1552637 [interfaces.py:start():168] Started cpu
+2023-02-24 23:41:00,689 INFO    SystemMonitor:1552637 [interfaces.py:start():168] Started disk
+2023-02-24 23:41:00,690 INFO    SystemMonitor:1552637 [interfaces.py:start():168] Started gpu
+2023-02-24 23:41:00,691 INFO    SystemMonitor:1552637 [interfaces.py:start():168] Started memory
+2023-02-24 23:41:00,693 INFO    SystemMonitor:1552637 [interfaces.py:start():168] Started network
+2023-02-24 23:41:00,727 DEBUG   HandlerThread:1552637 [system_info.py:probe():195] Probing system
+2023-02-24 23:41:00,734 DEBUG   HandlerThread:1552637 [system_info.py:_probe_git():180] Probing git
+2023-02-24 23:41:00,752 DEBUG   HandlerThread:1552637 [system_info.py:_probe_git():188] Probing git done
+2023-02-24 23:41:00,752 DEBUG   HandlerThread:1552637 [system_info.py:probe():241] Probing system done
+2023-02-24 23:41:00,752 DEBUG   HandlerThread:1552637 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-58-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-02-24T18:11:00.727604', 'startedAt': '2023-02-24T18:10:59.932092', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'q1.py', 'codePath': 'q1.py', 'git': {'remote': 'git@github.com:oikn2018/CS6910_assignment_1.git', 'commit': 'c314b9d9ed031d88ed2b8f142c5818b4d488675a'}, 'email': 'oikantiknath@gmail.com', 'root': '/home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1', 'host': 'hubel-vplab', 'username': 'oikantik', 'executable': '/usr/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 1358.8054166666668, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 1800.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1305.665, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2400.0, 'min': 1200.0, 'max': 3600.0}], 'disk': {'total': 914.8291778564453, 'used': 303.43538665771484}, 'gpu': 'NVIDIA GeForce GTX TITAN X', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12806127616}, {'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12802850816}], 'memory': {'total': 62.636085510253906}}
+2023-02-24 23:41:00,752 INFO    HandlerThread:1552637 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-24 23:41:00,752 INFO    HandlerThread:1552637 [system_monitor.py:probe():185] Publishing system info
+2023-02-24 23:41:00,752 DEBUG   HandlerThread:1552637 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-24 23:41:00,753 DEBUG   HandlerThread:1552637 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-24 23:41:00,753 INFO    HandlerThread:1552637 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-24 23:41:00,763 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:00,763 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-02-24 23:41:00,773 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-24 23:41:00,774 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: stop_status
+2023-02-24 23:41:01,067 DEBUG   SenderThread:1552637 [sender.py:send():336] send: telemetry
+2023-02-24 23:41:01,610 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/requirements.txt
+2023-02-24 23:41:01,610 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/wandb-metadata.json
+2023-02-24 23:41:01,610 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/wandb-summary.json
+2023-02-24 23:41:01,732 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,733 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_bbdf552915de2c88b6a0.png with policy now
+2023-02-24 23:41:01,741 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,742 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_c63ff25b08464f794eb7.png with policy now
+2023-02-24 23:41:01,742 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,742 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_be50c8f9ba9595f3bae6.png with policy now
+2023-02-24 23:41:01,743 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,744 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_9ccc1be39299c7e9ec3a.png with policy now
+2023-02-24 23:41:01,744 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,744 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_52109d303c4b9a0beb26.png with policy now
+2023-02-24 23:41:01,753 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,753 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_758bd8adaf3dde06e177.png with policy now
+2023-02-24 23:41:01,754 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,754 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_f7c0f66923ea614294bf.png with policy now
+2023-02-24 23:41:01,754 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,760 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_128354086b51e41db933.png with policy now
+2023-02-24 23:41:01,762 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-24 23:41:01,764 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,764 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_3b81d465b9764d7de835.png with policy now
+2023-02-24 23:41:01,764 DEBUG   SenderThread:1552637 [sender.py:send():336] send: files
+2023-02-24 23:41:01,765 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file media/images/Sample Image from each class_0_fd53c7e4f59d5e96401b.png with policy now
+2023-02-24 23:41:01,766 DEBUG   SenderThread:1552637 [sender.py:send():336] send: history
+2023-02-24 23:41:01,766 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: summary_record
+2023-02-24 23:41:01,767 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-24 23:41:01,767 DEBUG   SenderThread:1552637 [sender.py:send():336] send: exit
+2023-02-24 23:41:01,767 INFO    SenderThread:1552637 [sender.py:send_exit():559] handling exit code: 0
+2023-02-24 23:41:01,767 INFO    SenderThread:1552637 [sender.py:send_exit():561] handling runtime: 1
+2023-02-24 23:41:01,769 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-24 23:41:01,769 INFO    SenderThread:1552637 [sender.py:send_exit():567] send defer
+2023-02-24 23:41:01,774 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:01,774 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-24 23:41:01,775 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:01,776 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-02-24 23:41:01,776 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 1
+2023-02-24 23:41:01,776 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:01,777 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-24 23:41:01,777 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:01,777 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-02-24 23:41:01,777 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 2
+2023-02-24 23:41:01,777 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:01,777 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-24 23:41:01,777 INFO    HandlerThread:1552637 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-24 23:41:01,778 DEBUG   SystemMonitor:1552637 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-24 23:41:01,779 DEBUG   SystemMonitor:1552637 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-24 23:41:01,783 DEBUG   SystemMonitor:1552637 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-24 23:41:01,785 INFO    HandlerThread:1552637 [interfaces.py:finish():175] Joined cpu
+2023-02-24 23:41:01,785 INFO    HandlerThread:1552637 [interfaces.py:finish():175] Joined disk
+2023-02-24 23:41:01,955 INFO    HandlerThread:1552637 [interfaces.py:finish():175] Joined gpu
+2023-02-24 23:41:01,956 INFO    HandlerThread:1552637 [interfaces.py:finish():175] Joined memory
+2023-02-24 23:41:01,956 INFO    HandlerThread:1552637 [interfaces.py:finish():175] Joined network
+2023-02-24 23:41:01,957 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:01,957 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-02-24 23:41:01,957 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 3
+2023-02-24 23:41:01,957 DEBUG   SenderThread:1552637 [sender.py:send():336] send: stats
+2023-02-24 23:41:01,957 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:01,958 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-24 23:41:01,959 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:01,959 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-02-24 23:41:01,959 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 4
+2023-02-24 23:41:01,959 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:01,959 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-24 23:41:01,960 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:01,960 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-02-24 23:41:01,960 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 5
+2023-02-24 23:41:01,960 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:01,961 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-24 23:41:01,961 DEBUG   SenderThread:1552637 [sender.py:send():336] send: summary
+2023-02-24 23:41:01,962 INFO    SenderThread:1552637 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-24 23:41:01,963 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:01,963 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-02-24 23:41:01,963 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 6
+2023-02-24 23:41:01,963 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:01,963 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-24 23:41:01,964 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:01,964 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-02-24 23:41:01,969 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: status_report
+2023-02-24 23:41:01,990 INFO    wandb-upload_0:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/483yrvry-wandb-metadata.json
+2023-02-24 23:41:02,271 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 7
+2023-02-24 23:41:02,272 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:02,272 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-24 23:41:02,272 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:02,273 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-02-24 23:41:02,273 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 8
+2023-02-24 23:41:02,273 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:02,273 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-24 23:41:02,273 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:02,274 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-02-24 23:41:02,302 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 9
+2023-02-24 23:41:02,303 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:02,303 DEBUG   SenderThread:1552637 [sender.py:send():336] send: artifact
+2023-02-24 23:41:02,303 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-24 23:41:02,579 INFO    wandb-upload_1:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/p2blyxbq-media/images/Sample Image from each class_0_bbdf552915de2c88b6a0.png
+2023-02-24 23:41:02,609 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/wandb-summary.json
+2023-02-24 23:41:02,609 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/config.yaml
+2023-02-24 23:41:02,610 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_3b81d465b9764d7de835.png
+2023-02-24 23:41:02,610 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_fd53c7e4f59d5e96401b.png
+2023-02-24 23:41:02,611 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_c63ff25b08464f794eb7.png
+2023-02-24 23:41:02,611 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_f7c0f66923ea614294bf.png
+2023-02-24 23:41:02,612 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_9ccc1be39299c7e9ec3a.png
+2023-02-24 23:41:02,612 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_52109d303c4b9a0beb26.png
+2023-02-24 23:41:02,613 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_be50c8f9ba9595f3bae6.png
+2023-02-24 23:41:02,614 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_bbdf552915de2c88b6a0.png
+2023-02-24 23:41:02,614 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_758bd8adaf3dde06e177.png
+2023-02-24 23:41:02,615 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_128354086b51e41db933.png
+2023-02-24 23:41:02,615 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images
+2023-02-24 23:41:02,616 INFO    Thread-13 :1552637 [dir_watcher.py:_on_file_created():275] file/dir created: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media
+2023-02-24 23:41:02,650 INFO    wandb-upload_4:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/kz9wyava-media/images/Sample Image from each class_0_9ccc1be39299c7e9ec3a.png
+2023-02-24 23:41:02,681 INFO    wandb-upload_7:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/v8nvizj7-media/images/Sample Image from each class_0_f7c0f66923ea614294bf.png
+2023-02-24 23:41:02,701 INFO    wandb-upload_2:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/b62s484l-media/images/Sample Image from each class_0_c63ff25b08464f794eb7.png
+2023-02-24 23:41:02,716 INFO    wandb-upload_5:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/u5u08xr7-media/images/Sample Image from each class_0_52109d303c4b9a0beb26.png
+2023-02-24 23:41:02,724 INFO    wandb-upload_6:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/m8kaf7p4-media/images/Sample Image from each class_0_758bd8adaf3dde06e177.png
+2023-02-24 23:41:02,735 INFO    wandb-upload_10:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/rp5q4w4t-media/images/Sample Image from each class_0_fd53c7e4f59d5e96401b.png
+2023-02-24 23:41:02,757 INFO    wandb-upload_9:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/yhvktc9f-media/images/Sample Image from each class_0_3b81d465b9764d7de835.png
+2023-02-24 23:41:02,766 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-24 23:41:02,870 INFO    wandb-upload_3:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/w03xwgy1-media/images/Sample Image from each class_0_be50c8f9ba9595f3bae6.png
+2023-02-24 23:41:02,876 INFO    wandb-upload_8:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/iokakky7-media/images/Sample Image from each class_0_128354086b51e41db933.png
+2023-02-24 23:41:03,567 INFO    wandb-upload_1:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/6pokf6lm-media/images/Sample Image from each class_0_c63ff25b08464f794eb7.png
+2023-02-24 23:41:03,574 INFO    wandb-upload_7:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/mgohyh0j-media/images/Sample Image from each class_0_f7c0f66923ea614294bf.png
+2023-02-24 23:41:03,706 INFO    wandb-upload_0:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/fefzhqg9-media/images/Sample Image from each class_0_bbdf552915de2c88b6a0.png
+2023-02-24 23:41:03,738 INFO    wandb-upload_6:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/jnnf8wux-media/images/Sample Image from each class_0_128354086b51e41db933.png
+2023-02-24 23:41:03,748 INFO    wandb-upload_5:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/c8bgtbpw-media/images/Sample Image from each class_0_758bd8adaf3dde06e177.png
+2023-02-24 23:41:03,784 INFO    wandb-upload_4:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/u5rxxeyu-media/images/Sample Image from each class_0_9ccc1be39299c7e9ec3a.png
+2023-02-24 23:41:03,785 INFO    SenderThread:1552637 [sender.py:send_artifact():1417] sent artifact job-git_github.com_oikn2018_CS6910_assignment_1.git_q1.py - {'id': 'QXJ0aWZhY3Q6MzgwNjMwNjcw', 'digest': '0cf689fc49ef9ae14a54a80b51ddf99d', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-git_github.com_oikn2018_CS6910_assignment_1.git_q1.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-git_github.com_oikn2018_CS6910_assignment_1.git_q1.py', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU0NjI0NTMw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzgwNjMwNjcw', 'versionIndex': 1}}, 'version': 'v1'}
+2023-02-24 23:41:03,785 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:03,785 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-02-24 23:41:03,786 INFO    SenderThread:1552637 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-24 23:41:03,914 INFO    wandb-upload_2:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/iq968quc-media/images/Sample Image from each class_0_52109d303c4b9a0beb26.png
+2023-02-24 23:41:04,444 INFO    wandb-upload_3:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/6wb5sfb8-media/images/Sample Image from each class_0_3b81d465b9764d7de835.png
+2023-02-24 23:41:04,617 INFO    SenderThread:1552637 [dir_watcher.py:finish():392] scan: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files
+2023-02-24 23:41:04,617 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/wandb-metadata.json wandb-metadata.json
+2023-02-24 23:41:04,618 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/config.yaml config.yaml
+2023-02-24 23:41:04,618 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/requirements.txt requirements.txt
+2023-02-24 23:41:04,618 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/wandb-summary.json wandb-summary.json
+2023-02-24 23:41:04,625 INFO    wandb-upload_8:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/4pz88ksj-media/images/Sample Image from each class_0_fd53c7e4f59d5e96401b.png
+2023-02-24 23:41:04,638 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_bbdf552915de2c88b6a0.png media/images/Sample Image from each class_0_bbdf552915de2c88b6a0.png
+2023-02-24 23:41:04,638 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_758bd8adaf3dde06e177.png media/images/Sample Image from each class_0_758bd8adaf3dde06e177.png
+2023-02-24 23:41:04,639 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_fd53c7e4f59d5e96401b.png media/images/Sample Image from each class_0_fd53c7e4f59d5e96401b.png
+2023-02-24 23:41:04,639 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_c63ff25b08464f794eb7.png media/images/Sample Image from each class_0_c63ff25b08464f794eb7.png
+2023-02-24 23:41:04,639 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_3b81d465b9764d7de835.png media/images/Sample Image from each class_0_3b81d465b9764d7de835.png
+2023-02-24 23:41:04,639 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_9ccc1be39299c7e9ec3a.png media/images/Sample Image from each class_0_9ccc1be39299c7e9ec3a.png
+2023-02-24 23:41:04,639 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_be50c8f9ba9595f3bae6.png media/images/Sample Image from each class_0_be50c8f9ba9595f3bae6.png
+2023-02-24 23:41:04,639 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_52109d303c4b9a0beb26.png media/images/Sample Image from each class_0_52109d303c4b9a0beb26.png
+2023-02-24 23:41:04,639 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_128354086b51e41db933.png media/images/Sample Image from each class_0_128354086b51e41db933.png
+2023-02-24 23:41:04,640 INFO    SenderThread:1552637 [dir_watcher.py:finish():406] scan save: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/media/images/Sample Image from each class_0_f7c0f66923ea614294bf.png media/images/Sample Image from each class_0_f7c0f66923ea614294bf.png
+2023-02-24 23:41:04,640 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 10
+2023-02-24 23:41:04,640 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: poll_exit
+2023-02-24 23:41:04,640 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:04,641 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-24 23:41:04,641 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:04,641 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-02-24 23:41:04,642 INFO    SenderThread:1552637 [file_pusher.py:finish():162] shutting down file pusher
+2023-02-24 23:41:04,713 INFO    wandb-upload_1:1552637 [upload_job.py:push():138] Uploaded file /tmp/tmp5fxxbuspwandb/4jcegthl-media/images/Sample Image from each class_0_be50c8f9ba9595f3bae6.png
+2023-02-24 23:41:05,459 INFO    wandb-upload_7:1552637 [upload_job.py:push():138] Uploaded file /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/config.yaml
+2023-02-24 23:41:05,495 INFO    wandb-upload_10:1552637 [upload_job.py:push():138] Uploaded file /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/wandb-summary.json
+2023-02-24 23:41:05,509 INFO    wandb-upload_0:1552637 [upload_job.py:push():138] Uploaded file /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/files/requirements.txt
+2023-02-24 23:41:05,710 INFO    Thread-12 :1552637 [sender.py:transition_state():587] send defer: 11
+2023-02-24 23:41:05,710 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:05,711 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-24 23:41:05,711 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:05,711 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-02-24 23:41:05,711 INFO    SenderThread:1552637 [file_pusher.py:join():167] waiting for file pusher
+2023-02-24 23:41:05,712 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 12
+2023-02-24 23:41:05,712 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:05,712 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-24 23:41:05,712 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:05,713 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-02-24 23:41:06,009 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 13
+2023-02-24 23:41:06,009 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:06,009 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-24 23:41:06,009 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:06,009 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-02-24 23:41:06,010 INFO    SenderThread:1552637 [sender.py:transition_state():587] send defer: 14
+2023-02-24 23:41:06,010 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: defer
+2023-02-24 23:41:06,010 INFO    HandlerThread:1552637 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-24 23:41:06,010 DEBUG   SenderThread:1552637 [sender.py:send():336] send: final
+2023-02-24 23:41:06,011 DEBUG   SenderThread:1552637 [sender.py:send():336] send: footer
+2023-02-24 23:41:06,011 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: defer
+2023-02-24 23:41:06,011 INFO    SenderThread:1552637 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-02-24 23:41:06,012 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-24 23:41:06,012 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: poll_exit
+2023-02-24 23:41:06,012 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: server_info
+2023-02-24 23:41:06,013 DEBUG   SenderThread:1552637 [sender.py:send_request():363] send_request: server_info
+2023-02-24 23:41:06,016 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-24 23:41:06,017 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-24 23:41:06,301 INFO    MainThread:1552637 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-02-24 23:41:06,302 INFO    MainThread:1552637 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-02-24 23:41:06,302 INFO    MainThread:1552637 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-02-24 23:41:06,303 DEBUG   HandlerThread:1552637 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-24 23:41:06,303 INFO    HandlerThread:1552637 [handler.py:finish():841] shutting down handler
+2023-02-24 23:41:07,013 INFO    WriterThread:1552637 [datastore.py:close():299] close: /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_234059-2eaephv8/run-2eaephv8.wandb
+2023-02-24 23:41:07,301 INFO    SenderThread:1552637 [sender.py:finish():1493] shutting down sender
+2023-02-24 23:41:07,301 INFO    SenderThread:1552637 [file_pusher.py:finish():162] shutting down file pusher
+2023-02-24 23:41:07,302 INFO    SenderThread:1552637 [file_pusher.py:join():167] waiting for file pusher

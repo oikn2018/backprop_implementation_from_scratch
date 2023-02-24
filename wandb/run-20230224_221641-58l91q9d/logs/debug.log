@@ -1,0 +1,25 @@
+2023-02-24 22:16:41,844 INFO    MainThread:1540090 [wandb_setup.py:_flush():68] Configure stats pid to 1540090
+2023-02-24 22:16:41,844 INFO    MainThread:1540090 [wandb_setup.py:_flush():68] Loading settings from /home/oikantik/.config/wandb/settings
+2023-02-24 22:16:41,844 INFO    MainThread:1540090 [wandb_setup.py:_flush():68] Loading settings from /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/settings
+2023-02-24 22:16:41,844 INFO    MainThread:1540090 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-24 22:16:41,844 INFO    MainThread:1540090 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'q1.py', 'program': 'q1.py'}
+2023-02-24 22:16:41,845 INFO    MainThread:1540090 [wandb_init.py:_log_setup():492] Logging user logs to /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_221641-58l91q9d/logs/debug.log
+2023-02-24 22:16:41,845 INFO    MainThread:1540090 [wandb_init.py:_log_setup():493] Logging internal logs to /home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1/wandb/run-20230224_221641-58l91q9d/logs/debug-internal.log
+2023-02-24 22:16:41,845 INFO    MainThread:1540090 [wandb_init.py:init():532] calling init triggers
+2023-02-24 22:16:41,845 INFO    MainThread:1540090 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {}
+2023-02-24 22:16:41,845 INFO    MainThread:1540090 [wandb_init.py:init():588] starting backend
+2023-02-24 22:16:41,845 INFO    MainThread:1540090 [wandb_init.py:init():592] setting up manager
+2023-02-24 22:16:41,849 INFO    MainThread:1540090 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-24 22:16:41,851 INFO    MainThread:1540090 [wandb_init.py:init():599] backend started and connected
+2023-02-24 22:16:41,855 INFO    MainThread:1540090 [wandb_init.py:init():687] updated telemetry
+2023-02-24 22:16:41,878 INFO    MainThread:1540090 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-02-24 22:16:42,537 INFO    MainThread:1540090 [wandb_run.py:_on_init():2134] communicating current version
+2023-02-24 22:16:42,585 INFO    MainThread:1540090 [wandb_run.py:_on_init():2143] got version response 
+2023-02-24 22:16:42,585 INFO    MainThread:1540090 [wandb_init.py:init():775] starting run threads in backend
+2023-02-24 22:16:42,664 INFO    MainThread:1540090 [wandb_run.py:_console_start():2114] atexit reg
+2023-02-24 22:16:42,665 INFO    MainThread:1540090 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-02-24 22:16:42,666 INFO    MainThread:1540090 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-02-24 22:16:42,666 INFO    MainThread:1540090 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-02-24 22:16:42,667 INFO    MainThread:1540090 [wandb_init.py:init():817] run started, returning control to user process
+2023-02-24 22:16:54,475 WARNING MsgRouterThr:1540090 [router.py:message_loop():77] message_loop has been closed

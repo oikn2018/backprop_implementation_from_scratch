@@ -1,0 +1,109 @@
+{
+    "os": "Linux-5.15.0-58-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-02-24T18:11:00.727604",
+    "startedAt": "2023-02-24T18:10:59.932092",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "q1.py",
+    "codePath": "q1.py",
+    "git": {
+        "remote": "git@github.com:oikn2018/CS6910_assignment_1.git",
+        "commit": "c314b9d9ed031d88ed2b8f142c5818b4d488675a"
+    },
+    "email": "oikantiknath@gmail.com",
+    "root": "/home/oikantik/Documents/DL_Assignment_1/CS6910_assignment_1",
+    "host": "hubel-vplab",
+    "username": "oikantik",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 1358.8054166666668,
+        "min": 1200.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1800.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1305.665,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1200.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "total": 914.8291778564453,
+        "used": 303.43538665771484
+    },
+    "gpu": "NVIDIA GeForce GTX TITAN X",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX TITAN X",
+            "memory_total": 12806127616
+        },
+        {
+            "name": "NVIDIA GeForce GTX TITAN X",
+            "memory_total": 12802850816
+        }
+    ],
+    "memory": {
+        "total": 62.636085510253906
+    }
+}

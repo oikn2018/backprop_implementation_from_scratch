@@ -1,0 +1,23 @@
+<class 'numpy.ndarray'>
+10
+[18, 12, 11, 1, 30, 2, 4, 0, 3, 5]
+Traceback (most recent call last):
+  File "q1.py", line 41, in <module>
+    wandb.log({"Sample Image from each class": [wandb.Image(image, caption=label) for image, label in zip(sample_images, sample_labels)]})
+  File "q1.py", line 41, in <listcomp>
+    wandb.log({"Sample Image from each class": [wandb.Image(image, caption=label) for image, label in zip(sample_images, sample_labels)]})
+  File "/home/oikantik/.local/lib/python3.8/site-packages/wandb/sdk/data_types/image.py", line 158, in __init__
+    self._initialize_from_data(data_or_path, mode)
+  File "/home/oikantik/.local/lib/python3.8/site-packages/wandb/sdk/data_types/image.py", line 294, in _initialize_from_data
+    if data.ndim > 2:
+AttributeError: 'list' object has no attribute 'ndim'
+Traceback (most recent call last):
+  File "q1.py", line 41, in <module>
+    wandb.log({"Sample Image from each class": [wandb.Image(image, caption=label) for image, label in zip(sample_images, sample_labels)]})
+  File "q1.py", line 41, in <listcomp>
+    wandb.log({"Sample Image from each class": [wandb.Image(image, caption=label) for image, label in zip(sample_images, sample_labels)]})
+  File "/home/oikantik/.local/lib/python3.8/site-packages/wandb/sdk/data_types/image.py", line 158, in __init__
+    self._initialize_from_data(data_or_path, mode)
+  File "/home/oikantik/.local/lib/python3.8/site-packages/wandb/sdk/data_types/image.py", line 294, in _initialize_from_data
+    if data.ndim > 2:
+AttributeError: 'list' object has no attribute 'ndim'
