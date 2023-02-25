@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "q1.py", line 33, in <module>
+    for i in range(classes):
+TypeError: 'list' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "q1.py", line 33, in <module>
+    for i in range(classes):
+TypeError: 'list' object cannot be interpreted as an integer

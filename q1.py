@@ -30,9 +30,9 @@ sample_indices = [list(y_train).index(i) for i in range(num_classes)]
 sample_images = []
 sample_labels = []
 
-for index in sample_indices:
-    sample_images.append(x_train[index])
-    sample_labels.append(classes[y_train[index]])
+for i in range(len(classes)):
+    sample_images.append(x_train[sample_indices[i]])
+    sample_labels.append(classes[i])
 
 wandb.log({"Sample Image from each class": [wandb.Image(image, caption=label) for image, label in zip(sample_images, sample_labels)]})
 
