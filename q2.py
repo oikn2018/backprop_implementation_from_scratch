@@ -3,8 +3,8 @@ import numpy as np # linear algebra
 # np.set_printoptions(threshold=sys.maxsize)
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 from matplotlib import pyplot as plt
+from tqdm import tqdm
 from keras.datasets import fashion_mnist
-# from sklearn.model_selection import train_test_split
 
 (x, y), (x_test, y_test) = fashion_mnist.load_data()
 print(x.shape, y.shape, x_test.shape, y_test.shape)
@@ -16,13 +16,9 @@ for i in range(x.shape[0]):
 x = np.array(x_temp)
 x_new = np.insert(x, 0, y, axis = 1)
 x = np.array(x_new)
-# print(x[0])
 
-# x_train, x_val, y_train, y_val = train_test_split(x, y, test_size = 0.2, random_state = 42)
 
-# data = pd.read_csv('/kaggle/input/fashionmnist/fashion-mnist_train.csv')
-# print(data.shape)
-# data = np.array(data)
+
 m, n = x.shape
 np.random.shuffle(x) # shuffle before splitting into validation and training sets
 
@@ -44,19 +40,49 @@ def init_params():
     b2 = np.random.rand(10, 1) - 0.5
     return W1, b1, W2, b2
 
-def ReLU(Z):
-    return np.maximum(0, Z)
+def sigmoid(self,x):
+return 1.0 / (1.0 + np.exp(-x))
 
-def softmax(Z):
-    return np.exp(Z) / sum(np.exp(Z))
+def tanh(self,x):
+return np.tanh(x)
+
+def relu(self, x):
+    return np.maximum(0, x)
+
+def deriv_sigmoid(self,x):
+return self.sigmoid(x)*(1.0 - self.sigmoid(x))
+
+def deriv_tanh(self,x):
+return 1.0 - self.tanh(x)*self.tanh(x) 
+
+def deriv_relu(self, x):
+    return x > 0
+
+def activation(self,x,n='sigmoid'): # Default: Sigmoid
+    if n == 'sigmoid':
+        return self.sigmoid(x)
+    elif n == 'tanh':
+        return self.tanh(x)
+    elif n == 'relu':
+        return self.relu(x)
+
+def d_activation(self,x,n='sigmoid'): # Default: Sigmoid
+    if n == 'sigmoid':
+        return self.deriv_sigmoid(x)
+    elif n == 'tanh':
+        return self.deriv_tanh(x)
+    elif n=='ReLu':
+        return self.deriv_ReLu(x)
+
+def softmax(self, x):
+    return np.exp(x) / sum(np.exp(x))
 
 def one_hot(Y):
     one_hot_Y = np.eye(np.max(Y) + 1)[Y]
     one_hot_Y = one_hot_Y.T
-    return one_hot_Y
+return one_hot_Y
 
-def deriv_ReLU(Z):
-    return Z > 0
+
     
 def get_predictions(A2):
     return np.argmax(A2, 0)
