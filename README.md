@@ -3,7 +3,7 @@ Name: Oikantik Nath | Roll: CS22S013 | Course: CS6910 Fundamentals of Deep Learn
 
 
 ## Question 1
-Code can be accessed [here](https://github.com/oikn2018/CS6910_assignment_1/blob/main/q1.py). `keras.datasets` is used to get `fashion_mnist` dataset and 1 sample image is plotted for each class using `wandb.log()`.
+Code can be accessed [here](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q1.ipynb). `keras.datasets` is used to get `fashion_mnist` dataset and 1 sample image is plotted for each class using `wandb.log()`.
 
 ## Questions 2-4
 The neural network is implemented by the class `FeedForwardNN`, present in the `train.py` file.  Access it [here](https://github.com/oikn2018/CS6910_assignment_1/blob/main/train.py).
