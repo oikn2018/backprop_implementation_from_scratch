@@ -86,7 +86,7 @@ The codes are organized as follows:
 
 | Question | Location | Function | 
 |----------|----------|----------|
-| Question 1 | [Question-1](https://github.com/oikn2018/CS6910_assignment_1/blob/main/q1.py) | Logging Representative Images | 
-| Question 2-4 | [Question-2-4](https://github.com/oikn2018/CS6910_assignment_1/blob/main/train.py) | Feedforward Architecture |
-| Question 7 | [Question-7](#) | Confusion Matrix logging for the best Run | 
-| Question 10 | [Question-10](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q10.py) | Hyperparameter configurations for MNIST data (Q10) | 
+| Question 1 | [Question-1](https://github.com/oikn2018/CS6910_assignment_1/blob/main/q1.py) | Plotting Sample Images of Each Class | 
+| Question 2-4 | [Question-2-4](https://github.com/oikn2018/CS6910_assignment_1/blob/main/train.py) | Feedforward Neural Network Training and Evaluating Accuracies |
+| Question 7 | [Question-7](#) | Confusion Matrix for Test Data on Best Model | 
+| Question 10 | [Question-10](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q10.py) | 3 Best Hyperparameter configurations for MNIST | 
