@@ -1,2 +1,92 @@
-# CS6910_assignment_1
-Name: Oikantik Nath. Roll: CS22S013
+# CS6910 Assignment 1
+Name: Oikantik Nath | Roll: CS22S013 | Course: CS6910 Fundamentals of Deep Learning
+
+
+## Question 1
+Code can be accessed [here](https://github.com/oikn2018/CS6910_assignment_1/blob/main/q1.py). `keras.datasets` is used to get `fashion_mnist` dataset and 1 sample image is plotted for each class using `wandb.log()`.
+
+## Questions 2-4
+The neural network is implemented by the class `FeedForwardNN`, present in the `train.py` file.  Access it [here](https://github.com/oikn2018/CS6910_assignment_1/blob/main/train.py).
+
+### Run the Code
+To run the code, execute in cmd: 
+#### Format:
+`python train.py -wp <wandb_project_name> -we <wandb_entity_name> -e <epochs> -b <batch_size> -o <optimizer> -lr <learning_rate> -w_i <weight_initialization_method> -nhl <num_hidden_layers> -sz <size_hidden_layer> -a <activation_function>`
+
+#### To test it on the best model achieved:
+`python train.py -wp Testing -we dl_research -e 20 -b 64 -o nadam -lr 0.005 -w_i Xavier -nhl 5 -sz 512 -a sigmoid`
+
+## Question 7
+The confusion matrix is logged using the following code:
+
+```python
+wandb.log({"conf_mat" : wandb.plot.confusion_matrix(
+                        probs=None,
+                        y_true=y_test[:9000],
+                        preds=y_test_pred,
+                        class_names=["T-shirt/top","Trouser","Pullover",\
+                                     "Dress","Coat","Sandal","Shirt","Sneaker",\
+                                     "Bag","Ankle boot"])})
+```
+
+
+## Question 10
+Since the MNIST dataset is much simpler in terms of image complexity compared to Fashion-MNIST dataset which I have used in my experimentation, so I suggest the following 3 configurations that give me the best accuracy scores on the Fashion-MNIST dataset. You can access code [here](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q10.py).
+
+- Configuration 1: 
+```python
+config = { 
+	"epochs" : 20,
+	"learning_rate": 0.005,
+	"no_hidden_layers": 5, 
+	"hidden_layers_size": 512,
+	"weight_decay": 0,
+	"optimizer": "nadam",
+	"batch_size": 64,
+	"weight_initialization" : "xavier" ,
+	"activations" : "sigmoid",
+}
+```
+ To run it, execute following command on cmd:
+`python Q10.py -wp Testing -we dl_research -d mnist -e 20 -b 64 -o nadam -lr 0.005 -w_i Xavier -nhl 5 -sz 512 -a sigmoid`
+
+- Configuration 2: 
+```python
+config = { 
+	"epochs" : 20,
+	"learning_rate": 0.0001,
+	"no_hidden_layers": 5, 
+	"hidden_layers_size": 256,
+	"weight_decay": 0,
+	"optimizer": "adam",
+	"batch_size": 128,
+	"weight_initialization" : "xavier" ,
+	"activations" : "relu",
+}
+```
+
+
+- Configuration 3: 
+```python
+config = { 
+	"epochs" : 20,
+	"learning_rate": 0.005,
+	"no_hidden_layers": 5, 
+	"hidden_layers_size": 256,
+	"weight_decay": 0,
+	"optimizer": "nadam",
+	"batch_size": 32,
+	"weight_initialization" : "xavier" ,
+	"activations" : "tanh",
+}
+```
+
+---
+The codes are organized as follows:
+
+| Question | Location | Function | 
+|----------|----------|----------|
+| Question 1 | [Question-1](https://github.com/oikn2018/CS6910_assignment_1/blob/main/q1.py) | Logging Representative Images | 
+| Question 2-4 | [Question-2-4](https://github.com/oikn2018/CS6910_assignment_1/blob/main/train.py) | Feedforward Architecture |
+| Question 7 | [Question-7](#) | Confusion Matrix logging for the best Run | 
+| Question 10 | [Question-10](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q10.py) | Hyperparameter configurations for MNIST data (Q10) | 
