@@ -16,17 +16,7 @@ To run the code, execute in cmd:
 `python train.py -wp Testing -we dl_research -e 20 -b 64 -o nadam -lr 0.005 -w_i Xavier -nhl 5 -sz 512 -a sigmoid`
 
 ## Question 7
-The confusion matrix is logged using the following code:
-
-```python
-wandb.log({"conf_mat" : wandb.plot.confusion_matrix(
-                        probs=None,
-                        y_true=y_test[:9000],
-                        preds=y_test_pred,
-                        class_names=["T-shirt/top","Trouser","Pullover",\
-                                     "Dress","Coat","Sandal","Shirt","Sneaker",\
-                                     "Bag","Ankle boot"])})
-```
+The confusion matrix code is available [here](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q7.py). It is tested on the Fashion-MNIST test data and the output confusion matrix is logged in the report.
 
 
 ## Question 10
@@ -46,26 +36,10 @@ config = {
 	"activations" : "sigmoid",
 }
 ```
- To run it, execute following command on cmd:
+To run above configuration, download [code](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q10.py) from GitHub and execute following command on cmd:
 `python Q10.py -wp Testing -we dl_research -d mnist -e 20 -b 64 -o nadam -lr 0.005 -w_i Xavier -nhl 5 -sz 512 -a sigmoid`
 
 - Configuration 2: 
-```python
-config = { 
-	"epochs" : 20,
-	"learning_rate": 0.0001,
-	"no_hidden_layers": 5, 
-	"hidden_layers_size": 256,
-	"weight_decay": 0,
-	"optimizer": "adam",
-	"batch_size": 128,
-	"weight_initialization" : "xavier" ,
-	"activations" : "relu",
-}
-```
-
-
-- Configuration 3: 
 ```python
 config = { 
 	"epochs" : 20,
@@ -79,13 +53,33 @@ config = {
 	"activations" : "tanh",
 }
 ```
+To run above configuration, download [code](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q10.py) from GitHub and execute following command on cmd:
+`python Q10.py -wp Testing -we dl_research -d mnist -e 20 -b 32 -o nadam -lr 0.005 -w_i Xavier -nhl 5 -sz 256 -a tanh`
+
+
+- Configuration 3: 
+```python
+config = { 
+	"epochs" : 20,
+	"learning_rate": 0.0001,
+	"no_hidden_layers": 5, 
+	"hidden_layers_size": 256,
+	"weight_decay": 0,
+	"optimizer": "adam",
+	"batch_size": 128,
+	"weight_initialization" : "xavier" ,
+	"activations" : "relu",
+}
+```
+To run above configuration, download [code](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q10.py) from GitHub and execute following command on cmd:
+`python Q10.py -wp Testing -we dl_research -d mnist -e 20 -b 128 -o adam -lr 0.0001 -w_i Xavier -nhl 5 -sz 256 -a relu`
 
 ---
 The codes are organized as follows:
 
 | Question | Location | Function | 
 |----------|----------|----------|
-| Question 1 | [Question-1](https://github.com/oikn2018/CS6910_assignment_1/blob/main/q1.py) | Plotting Sample Images of Each Class | 
+| Question 1 | [Question-1](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q1.ipynb) | Plotting Sample Images of Each Class | 
 | Question 2-4 | [Question-2-4](https://github.com/oikn2018/CS6910_assignment_1/blob/main/train.py) | Feedforward Neural Network Training and Evaluating Accuracies |
-| Question 7 | [Question-7](#) | Confusion Matrix for Test Data on Best Model | 
+| Question 7 | [Question-7](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q7.py) | Confusion Matrix for Test Data on Best Model | 
 | Question 10 | [Question-10](https://github.com/oikn2018/CS6910_assignment_1/blob/main/Q10.py) | 3 Best Hyperparameter configurations for MNIST | 
